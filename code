@@ -7,7 +7,7 @@ for month in range(1,13):  # LOOP: Collects monthly savings using a for loop (12
     s = float(input("Month " + str(month) + " savings: ")) # Ask user to input savings for each month
     tts = tts + s # Adds savings to the current total savings
 
-print("Total savings before any bonuses and emergency withdrawals: $",tts)
+print("Total savings before bonus: $",tts)
 
 b = str(input("Did you receive a bonus this year? Yes or No:")) # Asks if the user received a bonus or not
 
@@ -19,7 +19,7 @@ if b =="Yes":
 elif b == "No":
     print("No bonus received.")
 else:  # Handles invalid bonus input
-    print("Invalid input.Assuming no bonus received.")
+    print("Invalid input. Assuming no bonus received.")
     
 print("Final savings after adjustments: $", tts)
-print("Thank you for using the Savings tracker!")   
+print("Thank you for using the Savings tracker!")    
